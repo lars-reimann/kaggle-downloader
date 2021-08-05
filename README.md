@@ -29,7 +29,7 @@ Getting to the actual kernels takes three steps:
 1. Get a list of references to competitions:
     ```text
     usage: kaggle-downloader competition-refs [-h] -o OUT
-    
+
     optional arguments:
       -h, --help         show this help message and exit
       -o OUT, --out OUT  Output file.
@@ -37,26 +37,27 @@ Getting to the actual kernels takes three steps:
 2. Get a list of references to kernels:
     ```text
     usage: kaggle-downloader kernel-refs [-h] -c COMPETITIONS -e EXCLUDE -o OUT
-    
+
     optional arguments:
       -h, --help            show this help message and exit
       -c COMPETITIONS, --competitions COMPETITIONS
-                            JSON file with list of competitions.
+                            File with list of competitions references.
       -e EXCLUDE, --exclude EXCLUDE
-                            JSON file with list of competitions to exclude. Gets updated with competitions as they are processed.
+                            File with list of competitions references to exclude. Gets updated with competitions as they are processed.
       -o OUT, --out OUT     Output directory.
     ```
 3. Get kernels themselves:
     ```text
     usage: kaggle-downloader kernels [-h] -k KERNELS -e EXCLUDE -o OUT
-    
+
     optional arguments:
       -h, --help            show this help message and exit
       -k KERNELS, --kernels KERNELS
-                            Directory with JSON files containing a list of kernels
+                            Directory with files containing a list of kernel references.
       -e EXCLUDE, --exclude EXCLUDE
-                            JSON file with list of kernel to exclude. Gets updated with kernels as they are processed.
+                            File with list of kernel references to exclude. Gets updated with kernels as they are processed.
       -o OUT, --out OUT     Output directory.
+
     ```
 
 

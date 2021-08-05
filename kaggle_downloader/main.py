@@ -32,14 +32,14 @@ def get_args() -> argparse.Namespace:
     kernel_refs_parser.add_argument(
         "-c",
         "--competitions",
-        help="JSON file with list of competitions.",
+        help="File with list of competitions references.",
         type=argparse.FileType("r"),
         required=True,
     )
     kernel_refs_parser.add_argument(
         "-e",
         "--exclude",
-        help="JSON file with list of competitions to exclude. Gets updated with competitions as they are processed.",
+        help="File with list of competitions references to exclude. Gets updated with competitions as they are processed.",
         type=Path,
         required=True,
     )
@@ -54,14 +54,14 @@ def get_args() -> argparse.Namespace:
     kernels_parser.add_argument(
         "-k",
         "--kernels",
-        help="Directory with JSON files containing a list of kernels",
+        help="Directory with files containing a list of kernel references.",
         type=Path,
         required=True,
     )
     kernels_parser.add_argument(
         "-e",
         "--exclude",
-        help="JSON file with list of kernel to exclude. Gets updated with kernels as they are processed.",
+        help="File with list of kernel references to exclude. Gets updated with kernels as they are processed.",
         type=Path,
         required=True,
     )
