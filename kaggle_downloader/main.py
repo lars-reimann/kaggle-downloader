@@ -166,6 +166,8 @@ def export_kernels(kernel_dir: Path, exclude_file: Path, out_dir: Path):
                 print(f"Skipping (kernel type {metadata.get('kernelType')})")
             elif blob is None or blob.get("source") is None:
                 print("Skipping (missing source)")
+            elif blob.get("source") == "":
+                print("Skipping (empty source)")
             else:
 
                 # Export metadata
