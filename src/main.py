@@ -100,7 +100,7 @@ def export_kernels(comp_file: TextIOWrapper, exclude_file: TextIOWrapper, out_di
         try:
             excluded_refs: list[str] = json.load(exclude_file)
         except json.decoder.JSONDecodeError:
-            excluded_refs: list[str] = []
+            excluded_refs = []
 
     # Write kernel refs
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -131,7 +131,7 @@ def export_notebooks(kernel_dir: Path, exclude_file: TextIOWrapper, out_dir: Pat
         try:
             excluded_refs: list[str] = json.load(exclude_file)
         except json.decoder.JSONDecodeError:
-            excluded_refs: list[str] = []
+            excluded_refs = []
 
     # Write notebooks
     out_dir.mkdir(parents=True, exist_ok=True)
