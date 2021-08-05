@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\Lars\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.6397.59\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (kaggle-downloader-ym0uiHDn-py3.9)" project-jdk-type="Python SDK" />
+  <component name="PythonCompatibilityInspectionAdvertiser">
+    <option name="version" value="3" />
+  </component>
+</project>
