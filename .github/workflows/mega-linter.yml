@@ -14,7 +14,7 @@ env:
   APPLY_FIXES_MODE: commit
 
 jobs:
-  # Cancel duplicate jobs: https://github.com/fkirc/skip-duplicate-actions#option-3-cancellation-only
+  # Cancel duplicate jobs:
   cancel_duplicates:
     name: Cancel duplicate jobs
     runs-on: ubuntu-latest
