@@ -9,7 +9,7 @@ All **types** from [Commitizen](https://github.com/commitizen/conventional-commi
 allowed. Pick the one that fits best:
 
 | Type       | Meaning                                                                   |
-| ---------- | ------------------------------------------------------------------------- |
+|------------|---------------------------------------------------------------------------|
 | **`feat`** | New feature                                                               |
 | **`fix`**  | Bug fix                                                                   |
 | `docs`     | Documentation only changes                                                |
@@ -24,9 +24,9 @@ allowed. Pick the one that fits best:
 
 Examples:
 
--   `feat: fancy new feature`
--   `docs: write contributing guide`
--   `refactor!: drop support for older browsers` (the exclamation mark denotes a breaking change)
+- `feat: fancy new feature`
+- `docs: write contributing guide`
+- `refactor!: drop support for older browsers` (the exclamation mark denotes a breaking change)
 
 ### Description
 

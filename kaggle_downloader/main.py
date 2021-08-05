@@ -13,68 +13,60 @@ from .kaggle_downloader import KaggleDownloader
 
 
 def get_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Download kernels from Kaggle."
-    )
+    parser = argparse.ArgumentParser(description="Download kernels from Kaggle.")
     subparsers = parser.add_subparsers(dest="command")
 
     # competition-refs command
     competition_refs_parser = subparsers.add_parser(
-        "competition-refs",
-        help="Fetch competition references."
+        "competition-refs", help="Fetch competition references."
     )
     competition_refs_parser.add_argument(
-        "-o", "--out",
-        help="Output file.",
-        type=Path,
-        required=True)
+        "-o", "--out", help="Output file.", type=Path, required=True
+    )
 
     # kernel-refs command
     kernel_refs_parser = subparsers.add_parser(
         "kernel-refs",
-        help="Fetch kernel references for a list of competition references."
+        help="Fetch kernel references for a list of competition references.",
     )
     kernel_refs_parser.add_argument(
-        "-c", "--competitions",
+        "-c",
+        "--competitions",
         help="JSON file with list of competitions.",
         type=argparse.FileType("r"),
-        required=True
+        required=True,
     )
     kernel_refs_parser.add_argument(
-        "-e", "--exclude",
+        "-e",
+        "--exclude",
         help="JSON file with list of competitions to exclude. Gets updated with competitions as they are processed.",
         type=Path,
-        required=True
+        required=True,
     )
     kernel_refs_parser.add_argument(
-        "-o", "--out",
-        help="Output directory.",
-        type=Path,
-        required=True
+        "-o", "--out", help="Output directory.", type=Path, required=True
     )
 
     # kernels command
     kernels_parser = subparsers.add_parser(
-        "kernels",
-        help="Fetch kernels for a list of kernel references."
+        "kernels", help="Fetch kernels for a list of kernel references."
     )
     kernels_parser.add_argument(
-        "-k", "--kernels",
+        "-k",
+        "--kernels",
         help="Directory with JSON files containing a list of kernels",
         type=Path,
-        required=True
+        required=True,
     )
     kernels_parser.add_argument(
-        "-e", "--exclude",
+        "-e",
+        "--exclude",
         help="JSON file with list of kernel to exclude. Gets updated with kernels as they are processed.",
         type=Path,
-        required=True
+        required=True,
     )
     kernels_parser.add_argument(
-        "-o", "--out",
-        help="Output directory.",
-        type=Path,
-        required=True
+        "-o", "--out", help="Output directory.", type=Path, required=True
     )
 
     return parser.parse_args()
@@ -109,7 +101,9 @@ def export_kernel_refs(comp_file: TextIOWrapper, exclude_file: Path, out_dir: Pa
 
     relevant_refs = set(competition_refs) - set(excluded_refs)
     for index, competition_ref in enumerate(relevant_refs):
-        print(f"Working on competition {competition_ref} ({index + 1}/{len(relevant_refs)})")
+        print(
+            f"Working on competition {competition_ref} ({index + 1}/{len(relevant_refs)})"
+        )
 
         kernel_refs = downloader.fetch_kernel_refs(competition_ref)
 
@@ -144,9 +138,7 @@ def export_kernels(kernel_dir: Path, exclude_file: Path, out_dir: Path):
     relevant_refs = set(kernel_refs) - set(excluded_refs)
     for index, kernel_ref in enumerate(relevant_refs):
         try:
-            print(
-                f"Working on kernel {kernel_ref} ({index + 1}/{len(relevant_refs)})"
-            )
+            print(f"Working on kernel {kernel_ref} ({index + 1}/{len(relevant_refs)})")
 
             result = client.fetch_notebook(kernel_ref)
 
@@ -157,23 +149,38 @@ def export_kernels(kernel_dir: Path, exclude_file: Path, out_dir: Path):
                 print("Skipping (missing metadata)")
             elif metadata.get("language") != "python":
                 print(f"Skipping (kernel language {metadata.get('language')})")
-            elif metadata.get("kernelType") != "script" and metadata.get("kernelType") != "notebook":
+            elif (
+                metadata.get("kernelType") != "script"
+                and metadata.get("kernelType") != "notebook"
+            ):
                 print(f"Skipping (kernel type {metadata.get('kernelType')})")
             elif blob is None or blob.get("source") is None:
                 print("Skipping (missing source)")
             else:
 
                 # Export metadata
-                with open(out_dir.joinpath(f"{kernel_ref.replace('/', '$$$')}.meta.json"), "w", encoding="utf-8") as f:
+                with open(
+                    out_dir.joinpath(f"{kernel_ref.replace('/', '$$$')}.meta.json"),
+                    "w",
+                    encoding="utf-8",
+                ) as f:
                     json.dump(metadata, f, indent=4)
 
                 # Export Python code
                 source = blob.get("source")
                 if metadata.get("kernelType") == "script":
-                    with open(out_dir.joinpath(f"{kernel_ref.replace('/', '$$$')}.py"), "w", encoding="utf-8") as f:
+                    with open(
+                        out_dir.joinpath(f"{kernel_ref.replace('/', '$$$')}.py"),
+                        "w",
+                        encoding="utf-8",
+                    ) as f:
                         f.write(source)
                 elif metadata.get("kernelType") == "notebook":
-                    with open(out_dir.joinpath(f"{kernel_ref.replace('/', '$$$')}.py"), "w", encoding="utf-8") as f:
+                    with open(
+                        out_dir.joinpath(f"{kernel_ref.replace('/', '$$$')}.py"),
+                        "w",
+                        encoding="utf-8",
+                    ) as f:
                         nb = nbformat.reads(str(source), nbformat.NO_CONVERT)
                         python, _ = PythonExporter().from_notebook_node(nb)
                         f.writelines(python)
@@ -185,7 +192,10 @@ def export_kernels(kernel_dir: Path, exclude_file: Path, out_dir: Path):
             else:
                 print(e)
                 continue  # we don't exclude the package since the Kaggle endpoint might just be temporarily unavailable
-        except (nbformat.validator.NotebookValidationError, nbformat.reader.NotJSONError):
+        except (
+            nbformat.validator.NotebookValidationError,
+            nbformat.reader.NotJSONError,
+        ):
             print("Skipping (invalid notebook)")
         except Exception as e:
             print(e)

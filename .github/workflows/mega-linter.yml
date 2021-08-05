@@ -12,6 +12,7 @@ env:
   APPLY_FIXES: all
   APPLY_FIXES_EVENT: pull_request
   APPLY_FIXES_MODE: commit
+  FILTER_REGEX_EXCLUDE: (.github/workflows/)
 
 jobs:
   # Cancel duplicate jobs:

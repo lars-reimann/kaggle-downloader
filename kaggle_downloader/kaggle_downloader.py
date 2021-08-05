@@ -1,7 +1,7 @@
 from typing import Callable, Union
-from kaggle import KaggleApi
 
-from kaggle.models.kaggle_models_extended import Kernel, Competition
+from kaggle import KaggleApi
+from kaggle.models.kaggle_models_extended import Competition, Kernel
 
 
 class KaggleDownloader:
@@ -17,9 +17,7 @@ class KaggleDownloader:
     def fetch_kernel_refs(self, competition_ref: str) -> list[str]:
         return self._fetch_all_pages(
             lambda page: self.client.kernels_list(
-                competition=competition_ref,
-                page=page,
-                page_size=100
+                competition=competition_ref, page=page, page_size=100
             )
         )
 
@@ -28,7 +26,9 @@ class KaggleDownloader:
         return self.client.kernel_pull(user_name, kernel_slug)
 
     @staticmethod
-    def _fetch_all_pages(fetcher: Callable[[int], list[Union[Kernel, Competition]]]) -> list[str]:
+    def _fetch_all_pages(
+        fetcher: Callable[[int], list[Union[Kernel, Competition]]]
+    ) -> list[str]:
         result = []
         page = 1
 

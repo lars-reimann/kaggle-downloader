@@ -1,12 +1,16 @@
 [tool.poetry]
 name = "kaggle-downloader"
-version = "1.0.0"
+version = "1.0.1"
 description = "Download kernels from Kaggle."
 authors = ["Lars Reimann <mail@larsreimann.com>"]
 license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/lars-reimann/kaggle-downloader"
+repository = "https://github.com/lars-reimann/kaggle-downloader"
+keywords = ["kaggle", "machine-learning"]
 
 [tool.poetry.scripts]
-kaggle-downloader = 'kaggle_downloader.main:main'
+kaggle-downloader = "kaggle_downloader.main:main"
 
 [tool.poetry.dependencies]
 python = "^3.9"

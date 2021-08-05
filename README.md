@@ -2,6 +2,11 @@
 
 A wrapper around the Kaggle CLI to download multiple kernels at once.
 
+## Installation
+
+1. Grab the latest release of [Python](https://www.python.org/downloads/release).
+2. Install this tool with `pip install kaggle-downloader`.
+
 ## Usage
 
 ```
@@ -54,7 +59,7 @@ Getting to the actual kernels takes three steps:
     ```
 
 
-### Example usage:
+### Example usage
 
 ```bash
 # Step 1:
