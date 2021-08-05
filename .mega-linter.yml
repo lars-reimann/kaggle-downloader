@@ -1,0 +1,7 @@
+# See all available variables at https://nvuillam.github.io/mega-linter/configuration/ and in linters documentation.
+
+APPLY_FIXES: all
+DEFAULT_BRANCH: main
+FILEIO_REPORTER: false
+PRINT_ALPACA: false
+SHOW_ELAPSED_TIME: true
