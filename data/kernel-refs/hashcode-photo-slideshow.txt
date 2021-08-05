@@ -1,0 +1,17 @@
+manunaik/notebook7bac653c28
+angelhenriquez1/circle-of-hash
+mahmudds/hash-code-archive-photo-slideshow-optimization
+razamh/hash-code2019
+hasimsait/greedy
+egrehbbt/442k-in-2-hours
+ar89dsl/hash-optimisation-multiple-approaches-430k
+lsiddiqsunny/simple-hashing-solution-for-hash-code-2019
+saraswatitiwari/kernel33f8061544
+huikang/441k-in-11-mins
+huikang/2019q-eda-and-baseline-solution
+gb00000/hash-opt
+fatehaliyev/extremely-basic-eda
+group16/greedy-solution-lb-400k
+mathurinache/googlehashcode2019-starter-code
+arianit1990/kernel47d85f423c
+group16/tsp-swapper

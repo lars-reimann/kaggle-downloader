@@ -1,0 +1,5 @@
+dodger23/automated-content-grading
+soumya9977/autograding-using-lstm-tf-keras
+irfanmansuri/the-havelett-foundation-automated-scoring
+rathimadhav/notebook79ae0de477
+mpwolke/hewlett-foundation-essay-scoring

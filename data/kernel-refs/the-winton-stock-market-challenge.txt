@@ -1,0 +1,4 @@
+manavtrivedi/winton-challenge
+zonghao/predicting-stock-returns-by-xgboost
+rlagrois/macropca-with-unknown-features
+rlagrois/testing-macropca-predictive-power-winton

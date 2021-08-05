@@ -1,0 +1,7 @@
+hwangchanghyun/open-images-mask-rcnn-starter
+vsevicky/open-images-object-detection-rvc-2020-edition
+abdullahhashmi/open-images-mask-rcnn-starter
+mahmudds/open-images-object-detection-rvc
+shawon10/object-detection-and-image-segmentation-pixellib
+meenakshiramaswamy/open-images-mask-rcnn-starter
+jpmiller/open-images-eda

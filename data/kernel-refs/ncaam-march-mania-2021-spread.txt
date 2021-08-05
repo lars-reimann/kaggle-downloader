@@ -1,0 +1,13 @@
+colepack/498-project-ncaam21
+jonathonchasteen/498-project-ncaam21
+ironicninja/generate-a-march-madness-bracket
+ironicninja/simple-nn-for-march-madness-predictions
+tunguz/2021-ncaam-spread-rapids-starter
+lucabasa/march-madness-model-validation-strategies
+lucabasa/quick-eda-with-common-feature-engineering
+hackspyder/ncaam-data-visualization
+osmavenind/test1-ncaam-spread
+jaseziv83/yearly-full-ncaa-men-s-ball-r-analysis
+docxian/ncaam-scores-eda-and-baseline-model
+anshumoudgil/basketball-2020-vectors-feature-engg-strategy
+khoongweihao/ncaam2020-2021-xgboost-lightgbm-k-fold

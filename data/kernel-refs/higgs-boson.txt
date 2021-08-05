@@ -1,0 +1,10 @@
+anuragbagadi/detecting-the-higgs-boson-using-rnn
+theamateurcoder/higgs-boson-ml-problem
+jiahuali/jiahua-li-higgs-bosons
+imeintanis/identifying-higgs-boson-t-sne-umap-rapids
+makhloufsabir/higgs-boson-classification-physics-rnn
+makhloufsabir/higgs-boson-classification-physics
+shubhendra7/higgs-boson-analysis
+ssismasterchief/identifying-higgs-boson-atlas-h2o
+parijatkumar2003/r-code-to-get-3-7-score
+bitanbiswas99/higgsbossonuniv-ai-project

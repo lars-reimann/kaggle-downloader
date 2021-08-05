@@ -1,0 +1,7 @@
+sergeyzinchenko/predicting-a-biological-response
+vernondsouza123/predict-biological-response-through-lightgbm
+anastasia484/predicting-a-biological-response
+zmey56/my-learning-kernel
+quinnd/basicsubmission
+zmey56/my-first-kernels-from-coursera
+ludi666/lr-regression

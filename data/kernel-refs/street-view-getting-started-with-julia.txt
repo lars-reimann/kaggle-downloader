@@ -1,0 +1,4 @@
+martinhaha/fastai-cv
+vandan20/ocr-using-different-methods-in-python
+chaitanyagarikipati/character-recognition-cnn
+jazivxt/and-the-winner-is-spacy-render

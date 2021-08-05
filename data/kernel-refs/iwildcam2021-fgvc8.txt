@@ -1,0 +1,17 @@
+devashishprasad/fastest-way-to-read-and-process-images
+stpeteishii/iwildcam2021-make-images-extracted
+nayuts/creating-mask-from-bbox-with-deepmac
+uncletito727/yolo-v5-animal-detection
+saurabhbagchi/efficientnet-with-undersampling-optimizer-tuning
+vighneshbgoogle/run-deepmac-inference-for-iwildcam
+abhaychaudhary01/insect-augmentation-et-al
+shubhamsinghgharsele/wildcams
+vighneshbgoogle/iwildcam-visualize-instance-masks
+nayuts/256-x-256-cropped-images
+nayuts/efficientnet-with-undersampling
+gpreda/iwildcam2021-normalize-metadata-jsons
+nayuts/try-megadetector-crop-animals-on-kaggle-notebook
+nayuts/iwildcam-2021-starter-notebook
+drcapa/iwildcam-2021-starter-eda
+khoongweihao/insect-augmentation-et-al
+devashishprasad/iwildcam2021-submission

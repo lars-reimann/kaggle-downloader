@@ -1,0 +1,2 @@
+ptyshevs/cnn-for-reversing-game-of-life
+ruchibahl18/starting-of-an-end-game

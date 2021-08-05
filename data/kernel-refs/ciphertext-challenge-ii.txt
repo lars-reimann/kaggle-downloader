@@ -1,0 +1,13 @@
+ahmedehsan1993/aiproject
+qaziahmed/the-crypto-keeper
+qaziahmed/qaziahmedpaper
+maxlincoln/circuitos-digitais-2
+lemonkoala/cipher-difficulty-1-solution
+group16/cracking-the-code-difficulty-1
+group16/cracking-the-code-difficulty-3
+bsteenwi/cracking-the-code-difficulty-2
+kaggleuser58/how-to-get-started-with-level-4
+jazivxt/difficulty-2
+jazivxt/the-crypto-keeper
+jshen97/a-glance-to-ciphertext-level-4
+junkoda/finding-a-pattern-in-difficulty-2

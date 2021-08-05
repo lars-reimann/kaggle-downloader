@@ -1,0 +1,7 @@
+alexandersmedley/halite-4-reinforcement-learning-tf-agents
+elvenmonk/halite-numpy-simulator-10x-performance-boost
+yegorbiryukov/halite-swarm-intelligence-playground-edition
+arunprathap/getting-started-with-halite-boilerplate
+jpmiller/game-analyzer-halite-4-pe
+mylesoneill/halite-playground-template-bot
+shams1/getting-started-with-halite-boilerplate

@@ -1,0 +1,6 @@
+ortegayubro/walmart-clasificaci-n-tipo-de-viaje
+naksungp/quick-eda-plus-model
+sandeepsingh3480/notebook8ecd7cbceb
+dishask99/notebook8bb2428ec0
+aniketvishnu/wallmart-trip-type-classification-complete-model
+bonesliu10318/visualization-walmart-trip-type-classification

@@ -1,0 +1,8 @@
+hironobukawaguchi/galaxy-zoo-xception
+mihailgavrilita/galaxy-zoo-1-st-notebook
+zhuangjw/compress-galaxy-test-data
+zhuangjw/compress-galaxy-train-data
+mgambati/teste-classifica-o-de-gal-xias
+mgambati/galaxy-challenge
+helmehelmuto/keras-cnn
+atogni85/galaxy-convnet

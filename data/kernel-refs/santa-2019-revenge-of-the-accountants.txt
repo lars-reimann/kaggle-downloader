@@ -1,0 +1,12 @@
+callumgedling/callum-gedling-assignment-2
+lparker7/assignment-2
+jonachehilton/cp2410-assignment-2-jonache-hilton
+golubev/mip-optimization-preference-cost-santa2019revenge
+shrutimechlearn/santa-returns-workshop-explorers-wave-1-vs-wave-2
+golubev/baseline
+vipito/fork-of-santa-ip
+hs999518/santa-clause
+jazivxt/santa-opt-v2
+seshurajup/eda-for-santa-2019-revenge-of-the-accountants
+grapestone5321/santa-2019-sample-submission
+drcapa/santa-tour-revenge-bazaar

@@ -1,0 +1,14 @@
+duboviy/starter-kernel-yt8m-2018-sample-data
+anirudh257/exploration-bi-lstm-model-by-aman-srivasthava
+abimannan/youtube-2m
+amitkumarjaiswal/google-youtube-1st-try
+plumeria/8m-video-understanding-challenge
+machineheart/the-tools-of-import-data
+jameschien/newbie-easy-way-for-loading-video-frame-tfrecord
+ozlemy/download-training-videos-for-windows
+amansrivastava/exploration-bi-lstm-model
+ashishpatel26/youtube-8m-dataset-using-extratreesclassifier
+artyomp/a-fixed-download-script
+ayoubchebbi/youtube-8m-analytics
+mihaskalic/training-video-level-classifier-with-keras
+juliaelliott/starter-kernel-yt8m-2018-sample-data
