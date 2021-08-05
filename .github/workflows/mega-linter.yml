@@ -68,4 +68,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4.11.0
         with:
           branch: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
-          commit_message: "style: apply automatic fixes of linters"
+          commit_message: 'style: apply automatic fixes of linters'

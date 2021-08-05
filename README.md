@@ -9,7 +9,7 @@ A wrapper around the Kaggle CLI to download multiple kernels at once.
 
 ## Usage
 
-```
+```text
 usage: kaggle-downloader [-h] {competition-refs,kernel-refs,kernels} ...
 
 Download kernels from Kaggle.
@@ -26,7 +26,7 @@ optional arguments:
 
 Getting to the actual kernels takes three steps:
 1. Get a list of references to competitions:
-    ```
+    ```text
     usage: kaggle-downloader competition-refs [-h] -o OUT
     
     optional arguments:
@@ -34,7 +34,7 @@ Getting to the actual kernels takes three steps:
       -o OUT, --out OUT  Output file.
     ```
 2. Get a list of references to kernels
-    ```
+    ```text
     usage: kaggle-downloader kernel-refs [-h] -c COMPETITIONS -e EXCLUDE -o OUT
     
     optional arguments:
@@ -46,7 +46,7 @@ Getting to the actual kernels takes three steps:
       -o OUT, --out OUT     Output directory.
     ```
 3. Get kernels themselves
-    ```
+    ```text
     usage: kaggle-downloader kernels [-h] -k KERNELS -e EXCLUDE -o OUT
     
     optional arguments:
