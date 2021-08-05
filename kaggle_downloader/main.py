@@ -101,17 +101,27 @@ def export_kernel_refs(comp_file: TextIOWrapper, exclude_file: Path, out_dir: Pa
 
     relevant_refs = set(competition_refs) - set(excluded_refs)
     for index, competition_ref in enumerate(relevant_refs):
-        print(
-            f"Working on competition {competition_ref} ({index + 1}/{len(relevant_refs)})"
-        )
+        try:
+            print(
+                f"Working on competition {competition_ref} ({index + 1}/{len(relevant_refs)})"
+            )
 
-        kernel_refs = downloader.fetch_kernel_refs(competition_ref)
+            kernel_refs = downloader.fetch_kernel_refs(competition_ref)
 
-        if len(kernel_refs) > 0:
-            with out_dir.joinpath(f"{competition_ref}.txt").open("w") as f:
-                _write_lines(f, kernel_refs)
-        else:
-            print("Skipping (no associated kernels)")
+            if len(kernel_refs) > 0:
+                with out_dir.joinpath(f"{competition_ref}.txt").open("w") as f:
+                    _write_lines(f, kernel_refs)
+            else:
+                print("Skipping (no associated kernels)")
+
+        except kaggle.rest.ApiException as e:
+            if e.status == 403:
+                print("Skipping (forbidden)")
+            elif e.status == 404:
+                print("Skipping (not found)")
+            else:
+                print(e)
+                continue  # we don't exclude the package since the Kaggle endpoint might just be temporarily unavailable
 
         excluded_refs.append(competition_ref)
         with exclude_file.open("a") as f:
