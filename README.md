@@ -6,6 +6,7 @@ A wrapper around the Kaggle CLI to download multiple kernels at once.
 
 1. Grab the latest release of [Python](https://www.python.org/downloads/release).
 2. Install this tool with `pip install kaggle-downloader`.
+3. Follow the steps from the [Kaggle API documentation](https://github.com/Kaggle/kaggle-api#api-credentials) to create an API token. We never access this directly but let the official Kaggle API take care of authentication.
 
 ## Usage
 
