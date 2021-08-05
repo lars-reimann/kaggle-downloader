@@ -33,7 +33,7 @@ Getting to the actual kernels takes three steps:
       -h, --help         show this help message and exit
       -o OUT, --out OUT  Output file.
     ```
-2. Get a list of references to kernels
+2. Get a list of references to kernels:
     ```text
     usage: kaggle-downloader kernel-refs [-h] -c COMPETITIONS -e EXCLUDE -o OUT
     
@@ -45,7 +45,7 @@ Getting to the actual kernels takes three steps:
                             JSON file with list of competitions to exclude. Gets updated with competitions as they are processed.
       -o OUT, --out OUT     Output directory.
     ```
-3. Get kernels themselves
+3. Get kernels themselves:
     ```text
     usage: kaggle-downloader kernels [-h] -k KERNELS -e EXCLUDE -o OUT
     
