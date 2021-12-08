@@ -1,2 +1,8 @@
+# Poetry
 dist/
+
+# MegaLinter
 report/
+
+# NPM
+node_modules/
